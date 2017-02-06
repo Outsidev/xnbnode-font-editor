@@ -1,5 +1,5 @@
 {
-  "name": "xnb-font-editor",
+  "name": "xnbnode-font-editor",
   "version": "0.5.0",
   "main": "main.js",
   "dependencies": {
@@ -10,7 +10,7 @@
     "jquery": "*",
     "js-yaml": "^3.7.0"
   },
-  "author": "BurakSey",
+  "author": "BurakSey-Outsidev",
   "license": "MIT License",
   "devDependencies": {
     "electron": "^1.4.15"
