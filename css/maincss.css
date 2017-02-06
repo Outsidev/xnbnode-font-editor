@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(255, 255, 255);
+    /*background-image: url("../static/tile.png");
+    background-repeat: repeat;*/
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    border-radius: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: mediumpurple;
+}
+
+.top-buffer{
+    margin-top:20px;
+}
+
+.little-textbox{    
+    font-size: 14px;
+    padding: 0px;
+    padding-left: 4px;
+    height: 20px;
+    min-width: 50px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-radius: 0px;
+    width: 30px;
+}
+
+.textbox-noborder{
+    font-size: 31px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-radius: 0px;
+    text-align: center;   
+}
+
+.flex-columned{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.flex-rowed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-boy{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+}
+
+.remove-padding{
+    padding-left: 1px;
+}
+
+.card-box{
+    padding:3px;
+    flex-grow: 1;
+}
+
+.splitter-line{
+    border: 1px solid mediumpurple;
+    border-left-color: mediumpurple;
+    border-right-color: mediumaquamarine; 
+    margin: 15px;
+    height: 85%;
+}
+
+.darkboy-color {
+    color: white;
+    background: #434a54;
+}
+
+.fistik-color {
+    color: white;
+    background: #673ab7;
+}
+
+.panel-heading{
+    font-size: 18px;
+}
+
+.center-it{
+    align-self: center;
+}
+
+.label{
+    position:relative;
+    display: inline-block;
+}
+
+.label-hidden{
+    visibility: hidden;
+    align-self: center;
+}
+
+.makeit-bigger{
+    font-size: 24px;
+}
+
+.delayed-fadeout{
+    -webkit-animation-delay: 3s;    
+}

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Electron-YAML</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootflat/bootflat/css/bootflat.min.css">
+        <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+        <link rel="stylesheet" href="css/maincss.css">
+    </head>
+    <body>
+
+        <div class="container flex-columned">
+            <div class="center-it">
+                <button class="file-selector btn btn-primary makeit-bigger top-buffer">Click to Select Font File</button>
+            </div>
+            <div class="flex-rowed">
+                
+                <div class="search-side flex-columned flex-boy">
+
+                    <h3 class="text-center">
+                        <div class="form-search search-only">
+                            <i class="search-icon glyphicon glyphicon-search"></i>
+                            <input type="text" class="arasana form-control textbox-noborder" placeholder="Search Character">
+                        </div>                        
+                    </h3>   
+                    <span class="label label-danger label-hidden">space</span>                 
+                    <div class="search-results flex-rowed">                                                
+                    </div>
+                    <button class="copy-values btn btn-info">Copy Values</button>
+                </div>
+
+                <div class="splitter-line"></div>
+
+                <div class="adding-side flex-columned flex-boy">
+                    
+                    <h3 class="text-center">
+                        <div class="form-search search-only">
+                            <i class="search-icon glyphicon glyphicon-pencil"></i>
+                            <input type="text" class="eklesene form-control textbox-noborder" placeholder="Add or Edit Character">
+                        </div>                         
+                    </h3>
+                    <span class="check-char-label label label-danger label-hidden">This char already exists.</span>
+                    <div class="adding-results flex-rowed">                                                
+                    </div>
+                    <button class="add-or-edit-char btn btn-danger hidden">Add New Character</button>
+                    <div class="file-write-message top-buffer">                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script id="info-card" type="text/template">
+        {{#each this}}
+        <div class="info-card card-box" data-content-name="{{@key}}">
+            <div class="panel">
+                <div class="panel-heading fistik-color text-center">{{@key}}</div>
+                <ul class="list-group">
+                    {{#each this}}
+                    <li class="list-group-item flex-rowed">
+                        <span>{{@key}}:</span>
+                        <input type="text" class="form-control little-textbox" value="{{this}}" data-content-type="{{@key}}"></input>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        {{/each}}
+        </script>
+        
+        <script id="edit-card" type="text/template">
+        {{#each this}}
+            <div class="edit-card card-box" data-content-name="{{@key}}" >
+                <div class="panel">
+                    <div class="panel-heading darkboy-color text-center">{{@key}}</div>
+                    <ul class="list-group">
+                        {{#each this}}
+                        <li class="list-group-item flex-rowed">
+                            <span>{{@key}}:</span>
+                            <input type="text" class="form-control little-textbox" value="{{this}}" data-content-type="{{@key}}"></input>
+                        </li>           
+                        {{/each}}             
+                    </ul>
+                </div>
+            </div>
+        {{/each}}
+        </script>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script>window.jQuery = window.$ = require('jquery');</script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/bootflat/bootflat/js/icheck.min.js"></script>
+        <script src="node_modules/bootflat/bootflat/js/jquery.fs.selecter.min.js"></script>
+        <script src="node_modules/bootflat/bootflat/js/jquery.fs.stepper.min.js"></script>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
