@@ -9,3 +9,4 @@ you must add that new character to font's texture file too.
 Clone this repo, run "npm install". After that you can run app with "npm start".
 
 ##Usage
+![gif](https://media.giphy.com/media/l3q2Vtn1gbOZFJlcY/source.gif)
